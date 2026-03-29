@@ -1,178 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunrise Computers</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
-   <img id="logo" src="img/logo.png" alt="">
+    <img id="logo" src="img/logo.png" alt="">
 
     <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
-
   </header>
+  <div class="updates-bar">
+    <div class="updates-label">⚡Updates</div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>We Provide Best <br> Cyber Security Solutions</h1>
-      <p>
-        We offer complete cyber cafe services including printing, browsing,
-        online forms, and secure internet access for everyone.
-      </p>
-
-      <div class="hero-left-buttons">
-        <button id="contact-us">Contact Us</button>
+    <div class="updates-wrapper">
+      <div class="updates-track">
+        <span>CSC services shuru ho gaya hai, apna Aadhaar verify karein!</span>
+        <span>📢 Ab Ayushman Card banvane ki suvidha bhi uplabdh hai.</span>
+        <span>🎓 NSP Scholarship Portal open hai, apply now!</span>
+        <span>🎓 NSP XXXXXX</span>
       </div>
     </div>
+  </div>
 
-    <div class="hero-right">
-      <img src="img/hero-right.png" alt="Cyber Image">
+  <!-- Hero 000000000000000000000000000-->
+  <section id="home" class="hero">
+    <!-- Background Slides -->
+    <div class="hero-slide active" style="background-image: url('img/bg1.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('img/bg2.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('img/bg3.jpg');"></div>
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+    <!-- Your ORIGINAL CONTENT -->
+    <div class="hero-content">
+
+      <div class="hero-left">
+        <h1>SUNRISE COMPUTER, <br> KANDAR</h1>
+        <p>
+          Your Campus Digital Hub for premium services, high-speed computing, and academic resources. Everything you
+          need,
+          all in one place.
+        </p>
+        <a class="contact-us" href="#contact">Contact Us</a>
+      </div>
+
+    </div>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-box">
+      <div class="about-content">
+
+        <div class="about-left">
+          <h3>Sunrise Computers</h3>
+          <p>Sunrise Computers is a trusted cyber cafe providing the best online services for form filling across India.
+            We assist with government forms, job applications, exam registrations, and college admission processes with
+            accuracy and speed.</p>
+          <p> We also offer high-quality Xerox and printing services using modern machines, ensuring clear and fast
+            document output. Along with this, we provide computer sales and repair services for all your technical
+            needs. </p>
+        </div>
+
+        <div class="about-right">
+
+          <div class="owner-box">
+
+            <img src="img/ganesh.jpg" alt="Ganesh Navale" class="owner-img">
+
+            <div class="owner-info">
+              <h3 class="owner-name">Ganesh Navale</h3>
+              <p class="owner-role">Owner</p>
+              <p class="owner-desc">
+                Skilled in digital services and government applications with strong practical experience.
+                Focused on providing efficient, accurate, and customer-friendly solutions.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-main" id="services">
+    <h2 id="title-ourservices" class="section-title">Our Services</h2>
+
+    <div class="service-box-container">
+
+      <div class="service-box">
+        <h3>Government Services</h3>
+        <p>Aadhaar, PAN, Certificates, PM Kisan, MSME, Electricity services and more.</p>
+        <a href="government.html" class="service-btn">Explore More →</a>
+      </div>
+
+      <div class="service-box">
+        <h3>Printing & Computer Services</h3>
+        <p>Xerox, Printing, Lamination, Scanning, Computer Sales and more.</p>
+        <a href="printing.html" class="service-btn">Explore More →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-container">
+      <div class="contact-box">
+        <p><strong>Ganesh Navale</strong></p>
+        <p>📧 sck3536@gmail.com</p>
+        <p>📞 +91 9145193635</p>
+        <p>💬 WhatsApp: +91 9145193635</p>
+        <p>📍Sunrise Computer, Opposite JS super market, Kandar-413202, Tal-Karmala, Dist-Solapur.</p>
+      </div>
+
+      <div class="map-section">
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325.9417875466245!2d75.1950361931485!3d18.114884117863387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc4648c06f7fb21%3A0x66951a9bba661bf6!2s3%2C%20Karmala%20-%20Tembhurni%20Rd%2C%20near%20Balaji%20Tyres%2C%20Kandar%2C%20Maharashtra%20413202!5e1!3m2!1sen!2sin!4v1774787705492!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="map-btn-wrapper">
+          <a href="https://maps.app.goo.gl/Gfq4uZup8Z27DdoX6" target="_blank" class="map-btn">
+            📍 Get Directions
+          </a>
+        </div>
+
+      </div>
     </div>
   </section>
 
 
-  <!-- About Section -->
-<section class="about">
+  <!-- STATS Section -->
+  <section class="stats-section">
 
-  <h2 class="section-title">About Us</h2>
+    <div class="stats-container">
 
-  <div class="about-box">
-    <p>
-      Sunrise Computers is a trusted cyber cafe providing a wide range of digital services 
-      including printing, online form filling, high-speed internet browsing, and document services. 
-      Our goal is to offer reliable, fast, and secure solutions to meet the everyday needs of our customers.
-      Sunrise Computers is a trusted cyber cafe providing a wide range of digital services 
-      including printing, online form filling, high-speed internet browsing, and document services. 
-      Our goal is to offer reliable, fast, and secure solutions to meet the everyday needs of our customers.
-      Sunrise Computers is a trusted cyber cafe providing a wide range of digital services 
-      including printing, online form filling, high-speed internet browsing, and document services. 
-      Our goal is to offer reliable, fast, and secure solutions to meet the everyday needs of our customers.
-    </p>
+      <div class="stat-box">
+        <h2>4000</h2>
+        <p>Happy Customers</p>
+      </div>
 
-    <p>
-      With modern systems and a customer-friendly environment, we ensure a smooth experience 
-      whether you're applying for jobs, accessing government services, or simply browsing the internet.
-      With modern systems and a customer-friendly environment, we ensure a smooth experience 
-      whether you're applying for jobs, accessing government services, or simply browsing the internet.
-      With modern systems and a customer-friendly environment, we ensure a smooth experience 
-      whether you're applying for jobs, accessing government services, or simply browsing the internet.
-    </p>
-  </div>
+      <div class="stat-box">
+        <h2>500</h2>
+        <p>Forms Submitted Monthly</p>
+      </div>
 
-</section>
+      <div class="stat-box">
+        <h2>9000</h2>
+        <p>Pages printed Monthly</p>
+      </div>
 
+      
 
-
-  <!-- Services / Cards Section -->
-<section class="services">
-    <h2 class="section-title">Our Services</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <div class="icon">🏆</div>
-      <h3>Industry Certified</h3>
-      <p>We provide trusted and certified cyber cafe services with high standards.</p>
     </div>
 
-    <div class="card">
-      <div class="icon">☁️</div>
-      <h3>Data Privacy</h3>
-      <p>Your personal data and online activities are completely secure with us.</p>
-    </div>
+  </section>
 
-    <div class="card">
-      <div class="icon">🔒</div>
-      <h3>Security Services</h3>
-      <p>We ensure safe browsing and protection against cyber threats.</p>
-    </div>
+  <footer class="footer">
+    <p>© 2026 Sunrise Computers. All Rights Reserved. </p>
+  </footer>
+  <!-- Bottom nav for mobile -->
+  <nav class="bottom-nav">
 
-    <div class="card">
-      <div class="icon">🖨️</div>
-      <h3>Printing Services</h3>
-      <p>High-quality printing, scanning, and document services available.</p>
-    </div>
+    <a href="#home" class="bottom-nav-item active">
+      <img src="img/home.svg" alt="">
+      <span>Home</span>
+    </a>
 
-    <div class="card">
-      <div class="icon">🌐</div>
-      <h3>Fast Internet</h3>
-      <p>Experience high-speed internet for browsing, gaming, and work.</p>
-    </div>
+    <a href="#about" class="bottom-nav-item">
+      <img src="img/about-svgrepo-com.svg" alt="">
+      <span>About</span>
+    </a>
 
-    <div class="card">
-      <div class="icon">📄</div>
-      <h3>Online Forms</h3>
-      <p>We help fill government and job application forms easily.</p>
-    </div>
+    <a href="#services" class="bottom-nav-item">
+      <img src="img/services.svg" alt="">
+      <span>Services</span>
+    </a>
 
-    <div class="card">
-      <div class="icon">🖨️</div>
-      <h3>Printing Services</h3>
-      <p>High-quality printing, scanning, and document services available.</p>
-    </div>
+    <a href="#contact" class="bottom-nav-item">
+      <img src="img/contact-book-svgrepo-com.svg" alt="">
+      <span>Contact</span>
+    </a>
 
-    <div class="card">
-      <div class="icon">🌐</div>
-      <h3>Fast Internet</h3>
-      <p>Experience high-speed internet for browsing, gaming, and work.</p>
-    </div>
+  </nav>
+  <a href="https://wa.me/919145193635" class="whatsapp-float" target="_blank">
 
-    <div class="card">
-      <div class="icon">📄</div>
-      <h3>Online Forms</h3>
-      <p>We help fill government and job application forms easily.</p>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-<!-- ---------------------------------------- -->
-
-  <section class="contact">
-
-  <h2 class="section-title">Contact Us</h2>
-
-  <div class="contact-container">
-
-    <!-- LEFT BOX -->
-    <div class="contact-box">
-      <p><strong>Ganesh Navale</strong></p>
-      <p>📧 sunrisecomputers@gmail.com</p>
-      <p>📞 +91 9145193635</p>
-      <p>💬 WhatsApp: +91 9145193635</p>
-    </div>
-
-    <!-- RIGHT BOX (MAP) -->
-    <div class="contact-map">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d948.0161176102424!2d75.1945437694842!3d18.11481377356524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s7JCQ457W%2BW3!5e0!3m2!1sen!2sin!4v1774265242255!5m2!1sen!2sin"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-    </div>
-
-  </div>
-
-</section>
-
-<footer class="footer">
-  <p>© 2026 Sunrise Computers. All rights reserved.</p>
-</footer>
-  <script src="script.js"></script>
+    <img src="img/whatsapp-svgrepo-com (1).svg" alt="WhatsApp">
+  </a>
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>
