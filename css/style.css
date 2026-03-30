@@ -55,6 +55,9 @@ img {
 .nav-links a:hover {
   color: #4db8ff;
 }
+.call-btn {
+  display: none;
+}
 
 /* UPDATES BAR */
 .updates-bar {
@@ -639,7 +642,15 @@ img {
   .nav-links {
     display: none;
   }
-
+   .call-btn {
+    display: block;
+  background: #2b6cb0;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+}
   /* Bottom Nav */
   .bottom-nav {
     position: fixed;
