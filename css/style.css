@@ -96,7 +96,7 @@ img {
 .updates-track {
   display: inline-block;
   white-space: nowrap;
-  animation: scrollText 18s linear infinite;
+  animation: scrollText 20s linear infinite;
 }
 
 .updates-track span {
