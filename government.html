@@ -4,143 +4,235 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Government Services - Sunrise Computer</title>
+  <title>Government Services — Sunrise Computer, Kandar</title>
+  <meta name="description"
+    content="Government services at Sunrise Computer Kandar — Aadhaar, PAN, PM Kisan, MSME, Certificates, Scholarships, Police Verification and more.">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Gravity particles background canvas -->
+  <canvas id="gravity-bg"></canvas>
+
+
   <!-- Navbar -->
   <header class="navbar">
-    <img id="logo" src="img/logo.png" alt="logo">
-
+    <img id="logo" src="img/logo1.png" alt="Sunrise Computer Logo">
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="index.html#about">About</a>
       <a href="index.html#services">Services</a>
       <a href="index.html#contact">Contact</a>
     </nav>
+    <a href="tel:+919145193635" class="call-btn">📞 Call</a>
   </header>
 
-  <!-- Government Services -->
+  <!-- Government Services Grid -->
   <section class="printing-grid">
-    <h2 class="section-title">All Government Services</h2>
+    <h2 class="section-title" data-animate>🏛️ All Government Services</h2>
 
     <div class="printing-container">
 
       <!-- Aadhaar -->
-      <div class="print-card">
-        <img src="img/aadhar.jpg" alt="">
+      <div class="print-card" data-animate data-delay="1">
+        <img src="img/aadhar.jpg" alt="Aadhaar Services">
         <div class="card-content">
           <h3>Aadhaar Services</h3>
           <p>New Aadhaar Update, Mobile Link, Address Update.</p>
-          <p><strong>Documents:</strong> Aadhaar Card, Mobile Number</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar Card Copy</li>
+              <li>Linked Mobile Number</li>
+              <li>Proof of Identity/Address (for changes)</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- PAN -->
-      <div class="print-card">
-        <img src="img/pan.jpg" alt="">
+      <div class="print-card" data-animate data-delay="2">
+        <img src="img/pan.jpg" alt="PAN Card Services">
         <div class="card-content">
           <h3>PAN Card Services</h3>
           <p>New PAN, Correction, PAN-Aadhaar Link, Reprint.</p>
-          <p><strong>Documents:</strong> Aadhaar, Photo, Signature</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar Card Copy</li>
+              <li>2 Passport Photos</li>
+              <li>Signature Scan</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- Police -->
-      <div class="print-card">
-        <img src="img/policeverification.jpg" alt="">
+      <div class="print-card" data-animate data-delay="3">
+        <img src="img/policeverification.jpg" alt="Police Verification">
         <div class="card-content">
           <h3>Police Verification</h3>
           <p>Character Certificate & Police Clearance services.</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar Card</li>
+              <li>Ration Card / Address Proof</li>
+              <li>Passport size Photograph</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- PM Kisan -->
-      <div class="print-card">
-        <img src="img/pmkisan.jpg" alt="">
+      <div class="print-card" data-animate data-delay="4">
+        <img src="img/pmkisan.jpg" alt="PM Kisan Yojana">
         <div class="card-content">
           <h3>PM Kisan Yojana</h3>
           <p>₹6000/year farmer scheme registration.</p>
-          <p><strong>Documents:</strong> Aadhaar, Bank, Land Record</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar Card</li>
+              <li>Farmer 7/12 Land Record</li>
+              <li>Bank Passbook & Linked Mobile</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- Farmer -->
-      <div class="print-card">
-        <img src="img/farmer-certificate.jpg" alt="">
+      <div class="print-card" data-animate data-delay="1">
+        <img src="img/farmer-certificate.jpg" alt="Farmer Certificate">
         <div class="card-content">
           <h3>Farmer Certificate</h3>
           <p>Kisan Identity Certificate for schemes.</p>
-          <p><strong>Documents:</strong> Aadhaar, 7/12, Mobile</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar Card</li>
+              <li>7/12 & 8A Land Records</li>
+              <li>Mobile Number</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- MSME -->
-      <div class="print-card">
-        <img src="img/MSME-Registration-1-7-2020.jpg" alt="">
+      <div class="print-card" data-animate data-delay="2">
+        <img src="img/MSME-Registration-1-7-2020.jpg" alt="MSME Registration">
         <div class="card-content">
           <h3>MSME Registration</h3>
           <p>Business (Udyam) registration services.</p>
-          <p><strong>Documents:</strong> Aadhaar, Bank, Business Info</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Owner Aadhaar Card</li>
+              <li>PAN Card Copy</li>
+              <li>Business Bank Account Details</li>
+            </ul>
+          </details>
         </div>
       </div>
 
-
       <!-- Certificates -->
-      <div class="print-card">
-        <img src="img/certificates.png" alt="">
+      <div class="print-card" data-animate data-delay="3">
+        <img src="img/certificates.png" alt="Government Certificates">
         <div class="card-content">
           <h3>Government Certificates</h3>
           <p>Income, Caste, Domicile, Birth/Death, Non-Creamy Layer.</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar Card</li>
+              <li>Ration Card</li>
+              <li>Income/Education Records</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- Scholarship -->
-      <div class="print-card">
-        <img src="img/scholarship.jpg" alt="">
+      <div class="print-card" data-animate data-delay="4">
+        <img src="img/scholarship.jpg" alt="Scholarship Forms">
         <div class="card-content">
           <h3>Scholarship Forms</h3>
-          <p>Instantly apply for NSP, Post Matric (PMS), and other state scholarships.</p>
+          <p>Apply for NSP, Post Matric (PMS), and other state scholarships instantly.</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar & Marksheets</li>
+              <li>Income Certificate</li>
+              <li>Caste Certificate</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- Land -->
-      <div class="print-card">
-        <img src="img/satbara.jpg" alt="">
+      <div class="print-card" data-animate data-delay="1">
+        <img src="img/satbara.jpg" alt="Land Services 7/12">
         <div class="card-content">
           <h3>Land Services (7/12)</h3>
           <p>7/12 extract and land records available instantly.</p>
+          <details class="card-details">
+            <summary>Required Details</summary>
+            <ul>
+              <li>Land Survey Number / Gat Number</li>
+              <li>District, Taluka, and Village name</li>
+            </ul>
+          </details>
         </div>
       </div>
 
-      <!-- Job application-->
-      <div class="print-card">
-        <img src="img/jobapplication.jpg" alt="">
+      <!-- Job Application -->
+      <div class="print-card" data-animate data-delay="2">
+        <img src="img/jobapplication.jpg" alt="Job Application Forms">
         <div class="card-content">
           <h3>Job Application Forms</h3>
           <p>Get help applying for Sarkari Naukri, private jobs, and competitive exams.</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Educational Marksheets</li>
+              <li>Aadhaar Copy</li>
+              <li>Photo & Signature scans</li>
+            </ul>
+          </details>
         </div>
       </div>
 
       <!-- Stamp -->
-      <div class="print-card">
-        <img src="img/stamp.jpg" alt="">
+      <div class="print-card" data-animate data-delay="3">
+        <img src="img/stamp.jpg" alt="Stamp and Legal">
         <div class="card-content">
           <h3>Stamp & Legal</h3>
           <p>Non-judicial stamp papers available.</p>
+          <details class="card-details">
+            <summary>Required Info</summary>
+            <ul>
+              <li>Aadhaar details of both parties</li>
+              <li>Purpose of Stamp / Agreement</li>
+            </ul>
+          </details>
         </div>
       </div>
 
-      <!-- Other -->
-      <div class="print-card">
-        <img src="img/Aaple-Sarkar-portal.jpeg" alt="">
+      <!-- Other Services -->
+      <div class="print-card" data-animate data-delay="4">
+        <img src="img/Aaple-Sarkar-portal.jpeg" alt="Other Services">
         <div class="card-content">
           <h3>Other Services</h3>
           <p>Shop Act, Ration Card, Voter ID, Online Form Filling.</p>
+          <details class="card-details">
+            <summary>Required Documents</summary>
+            <ul>
+              <li>Aadhaar & identity cards</li>
+              <li>Relevant business / residential proof</li>
+            </ul>
+          </details>
         </div>
       </div>
 
@@ -149,34 +241,26 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2026 Sunrise Computer. All rights reserved.</p>
+    <p>© 2026 Sunrise Computer, Kandar. All rights reserved.</p>
   </footer>
-  
-  <!-- Bottom nav for mobile -->
-<nav class="bottom-nav">
 
-  <a href="index.html#home" class="bottom-nav-item">
-    <img src="img/home.svg" alt="">
-    <span>Home</span>
-  </a>
+  <!-- Mobile Bottom Nav -->
+  <nav class="bottom-nav">
+    <a href="index.html#home" class="bottom-nav-item">
+      <img src="img/home.svg" alt=""><span>Home</span>
+    </a>
+    <a href="index.html#about" class="bottom-nav-item">
+      <img src="img/about-svgrepo-com.svg" alt=""><span>About</span>
+    </a>
+    <a href="index.html#services" class="bottom-nav-item active">
+      <img src="img/services.svg" alt=""><span>Services</span>
+    </a>
+    <a href="index.html#contact" class="bottom-nav-item">
+      <img src="img/contact-book-svgrepo-com.svg" alt=""><span>Contact</span>
+    </a>
+  </nav>
 
-  <a href="index.html#about" class="bottom-nav-item">
-    <img src="img/about-svgrepo-com.svg" alt="">
-    <span>About</span>
-  </a>
-
-  <a href="index.html#services" class="bottom-nav-item">
-    <img src="img/services.svg" alt="">
-    <span>Services</span>
-  </a>
-
-  <a href="index.html#contact" class="bottom-nav-item">
-    <img src="img/contact-book-svgrepo-com.svg" alt="">
-    <span>Contact</span>
-  </a>
-
-</nav>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>

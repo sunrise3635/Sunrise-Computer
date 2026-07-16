@@ -4,101 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Printing Services - Sunrise Computer</title>
+    <title>Printing & Computer Services — Sunrise Computer, Kandar</title>
+    <meta name="description"
+        content="Printing, scanning, lamination, computer sales, repair, bill payments and more at Sunrise Computer Kandar.">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- Gravity particles background canvas -->
+    <canvas id="gravity-bg"></canvas>
+
+
     <!-- Navbar -->
     <header class="navbar">
-        <img id="logo" src="img/logo.png" alt="logo">
-
+        <img id="logo" src="img/logo1.png" alt="Sunrise Computer Logo">
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="index.html#about">About</a>
             <a href="index.html#services">Services</a>
             <a href="index.html#contact">Contact</a>
         </nav>
+        <a href="tel:+919145193635" class="call-btn">📞 Call</a>
     </header>
 
     <!-- Printing Section -->
     <section class="printing-grid">
-        <h2 class="section-title">Printing & Computer Services</h2>
+        <h2 class="section-title" data-animate>🖨️ Printing & Computer Services</h2>
 
         <div class="printing-container">
 
-            <!-- Card 1 -->
-            <div class="print-card">
-                <img src="img/printing.jpg" alt="">
+            <!-- Printing & Scanning -->
+            <div class="print-card" data-animate data-delay="1">
+                <img src="img/printing.jpg" alt="Printing and Scanning">
                 <div class="card-content">
                     <h3>Printing & Scanning</h3>
                     <p>High-quality color/B&W printing, scanning, and photocopying for all documents.</p>
+                    <details class="card-details">
+                        <summary>Requirements & Formats</summary>
+                        <ul>
+                            <li>Supported: PDF, DOCX, JPEG, PNG</li>
+                            <li>Upload: WhatsApp, Email, or USB drive</li>
+                            <li>Paper: A4 standard, legal, glossy photo paper</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="print-card">
-                <img src="img/computeracess.jpg" alt="">
+            <!-- Computer Access -->
+            <div class="print-card" data-animate data-delay="2">
+                <img src="img/computeracess.jpg" alt="Computer Access">
                 <div class="card-content">
                     <h3>Computer Access</h3>
                     <p>Access high-performance computers with high-speed internet for your projects.</p>
+                    <details class="card-details">
+                        <summary>System Features</summary>
+                        <ul>
+                            <li>High-speed fiber internet access</li>
+                            <li>Standard office suites & browsers</li>
+                            <li>Privacy-secured workstations</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="print-card">
-                <img src="img/utility-bill-payments.jpg" alt="">
+            <!-- Bill Payments -->
+            <div class="print-card" data-animate data-delay="3">
+                <img src="img/utility-bill-payments.jpg" alt="Bill Payments">
                 <div class="card-content">
                     <h3>Bill Payments (Utility)</h3>
-                    <p>Pay your electricity, water, mobile, and DTH bills all in one place.</p>
+                    <p>Pay electricity, water, mobile, and DTH bills — all in one place.</p>
+                    <details class="card-details">
+                        <summary>Required Details</summary>
+                        <ul>
+                            <li>Utility Consumer Number / Account ID</li>
+                            <li>Registered Mobile Number</li>
+                            <li>Previous Bill Copy (Recommended)</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="print-card">
-                <img src="img/moneywithdrawal.jpg" alt="">
+            <!-- Money Withdrawal -->
+            <div class="print-card" data-animate data-delay="4">
+                <img src="img/moneywithdrawal.jpg" alt="Money Withdrawal">
                 <div class="card-content">
                     <h3>Money Withdrawal</h3>
-                    <p>Convenient and secure cash withdrawal (AePS) and money transfer services.</p>
+                    <p>Secure cash withdrawal (AePS) and money transfer services.</p>
+                    <details class="card-details">
+                        <summary>Required Details</summary>
+                        <ul>
+                            <li>Aadhaar Card copy / Number</li>
+                            <li>Aadhaar-linked Bank Name</li>
+                            <li>Fingerprint verification (in-person)</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
-            <!-- Card 5 -->
-            <div class="print-card">
-                <img src="img/lamination.jpg" alt="">
+            <!-- Lamination -->
+            <div class="print-card" data-animate data-delay="1">
+                <img src="img/lamination.jpg" alt="Lamination">
                 <div class="card-content">
                     <h3>Lamination</h3>
-                    <p>Durable lamination to protect your important documents.</p>
+                    <p>Durable lamination to protect your important documents and certificates.</p>
+                    <details class="card-details">
+                        <summary>Supported Items</summary>
+                        <ul>
+                            <li>Academic Marksheets / Certificates</li>
+                            <li>PAN Cards / Aadhaar Cards</li>
+                            <li>Land documents & Agreements</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
-            <!-- Card 6 -->
-            <div class="print-card">
-                <img src="img/computerrepair.jpg" alt="">
+            <!-- Computer Repair -->
+            <div class="print-card" data-animate data-delay="2">
+                <img src="img/computerrepair.jpg" alt="Computer Repair">
                 <div class="card-content">
                     <h3>Computer Repair</h3>
-                    <p>Quick repair service for hardware and software issues.</p>
+                    <p>Quick repair service for hardware and software issues at affordable rates.</p>
+                    <details class="card-details">
+                        <summary>Repair Services</summary>
+                        <ul>
+                            <li>OS Installation (Windows/Linux)</li>
+                            <li>RAM, HDD/SSD speed upgrades</li>
+                            <li>Diagnostic checks & virus cleaning</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
-            <!-- Card 7 -->
-            <div class="print-card">
-                <img src="img/computersales.jpg" alt="">
+            <!-- Computer Sales -->
+            <div class="print-card" data-animate data-delay="3">
+                <img src="img/computersales.jpg" alt="Computer Sales">
                 <div class="card-content">
                     <h3>Computer Sales</h3>
-                    <p>Affordable new and refurbished computers available.</p>
+                    <p>Affordable new and refurbished computers available for purchase.</p>
+                    <details class="card-details">
+                        <summary>Sales Range</summary>
+                        <ul>
+                            <li>Custom Desktop Configurations</li>
+                            <li>Refurbished student laptops</li>
+                            <li>Keyboards, mice, and basic cables</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
-            <!-- Card 8 -->
-            <div class="print-card">
-                <img src="img/antivirus.jpg" alt="">
+            <!-- Software & Antivirus -->
+            <div class="print-card" data-animate data-delay="4">
+                <img src="img/antivirus.jpg" alt="Software and Antivirus">
                 <div class="card-content">
                     <h3>Software & Antivirus</h3>
                     <p>System protection, updates, and software installation services.</p>
+                    <details class="card-details">
+                        <summary>Software Available</summary>
+                        <ul>
+                            <li>Licensed Antivirus keys</li>
+                            <li>Office and Productivity Suites</li>
+                            <li>PDF Readers & standard Utilities</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
 
@@ -107,33 +177,26 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2026 Sunrise Computer. All rights reserved.</p>
+        <p>© 2026 Sunrise Computer, Kandar. All rights reserved.</p>
     </footer>
-   <!-- Bottom nav for mobile -->
-<nav class="bottom-nav">
 
-  <a href="index.html#home" class="bottom-nav-item">
-    <img src="img/home.svg" alt="">
-    <span>Home</span>
-  </a>
+    <!-- Mobile Bottom Nav -->
+    <nav class="bottom-nav">
+        <a href="index.html#home" class="bottom-nav-item">
+            <img src="img/home.svg" alt=""><span>Home</span>
+        </a>
+        <a href="index.html#about" class="bottom-nav-item">
+            <img src="img/about-svgrepo-com.svg" alt=""><span>About</span>
+        </a>
+        <a href="index.html#services" class="bottom-nav-item active">
+            <img src="img/services.svg" alt=""><span>Services</span>
+        </a>
+        <a href="index.html#contact" class="bottom-nav-item">
+            <img src="img/contact-book-svgrepo-com.svg" alt=""><span>Contact</span>
+        </a>
+    </nav>
 
-  <a href="index.html#about" class="bottom-nav-item">
-    <img src="img/about-svgrepo-com.svg" alt="">
-    <span>About</span>
-  </a>
-
-  <a href="index.html#services" class="bottom-nav-item">
-    <img src="img/services.svg" alt="">
-    <span>Services</span>
-  </a>
-
-  <a href="index.html#contact" class="bottom-nav-item">
-    <img src="img/contact-book-svgrepo-com.svg" alt="">
-    <span>Contact</span>
-  </a>
-
-</nav>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
