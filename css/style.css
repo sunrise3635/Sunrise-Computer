@@ -1049,7 +1049,8 @@ img {
 
 /* Contact Form Below */
 .contact-form-container {
-  max-width: 620px; /* Reduced width to make the form look premium & minimal */
+  max-width: 620px;
+  /* Reduced width to make the form look premium & minimal */
   margin: 40px auto 0;
 }
 
@@ -1394,15 +1395,71 @@ img {
 .footer {
   background: var(--wine);
   border-top: 1px solid rgba(199, 183, 163, 0.15);
-  text-align: center;
-  padding: 28px 20px;
+  padding: 10px 40px;
   position: relative;
   z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
 }
 
-.footer p {
+.footer-credit {
+  grid-column: 1;
+  font-size: 11px;
+  color: var(--taupe);
+  opacity: 0.65;
+  margin: 0;
+  text-align: left;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.footer-credit span {
+  color: var(--cream);
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.footer-copyright {
+  grid-column: 2;
   font-size: 13px;
   color: var(--taupe);
+  margin: 0;
+  text-align: center;
+}
+
+.footer-spacer {
+  grid-column: 3;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px 20px;
+  }
+
+  .footer-spacer {
+    display: none;
+  }
+
+  .footer-copyright {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .footer-credit {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    font-size: 9.5px;
+  }
+
+  .footer-credit br {
+    display: none;
+  }
 }
 
 /* ============================================
@@ -1693,6 +1750,7 @@ img {
 }
 
 @media (hover: none) {
+
   /* Prevent sticky hover styles on touch devices */
   .contact-us:hover,
   .service-box:hover,
@@ -1706,23 +1764,27 @@ img {
     transform: none !important;
     box-shadow: none !important;
   }
-  
+
   .form-submit-btn:hover {
     background: var(--wine) !important;
     color: var(--cream) !important;
   }
+
   .modal-btn:hover {
     background: var(--wine) !important;
     color: var(--cream) !important;
   }
+
   .contact-us:hover {
     background: var(--gold) !important;
     color: var(--wine) !important;
   }
+
   .service-btn:hover {
     background: transparent !important;
     color: var(--gold) !important;
   }
+
   .map-btn:hover {
     background: var(--wine) !important;
     color: var(--cream) !important;
@@ -1808,8 +1870,12 @@ img {
    RESPONSIVE ANIMATION CONTROL (PHONES/TABLETS)
    ============================================ */
 @media (max-width: 768px) {
+
   /* Stop background blobs animation */
-  .blob, .blob-1, .blob-2, .blob-3 {
+  .blob,
+  .blob-1,
+  .blob-2,
+  .blob-3 {
     animation: none !important;
     transform: none !important;
     display: none !important;
